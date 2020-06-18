@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt8</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let N = +prompt("Nhap vao do dai chuoi: ");
+    for (let i=0; i<N; i++){
+        array[i] = +prompt("Nhap phan tu thu "+i+" cua mang");
+    }
+
+    function reverseArray() {
+        let start = 0;
+        let end = array.length - 1;
+        while (start < end) {
+            let mid = array [start];
+            array [start] = array [end];
+            array [end] = mid;
+            start++;
+            end--;
+        }
+        document.write(array);
+    }
+
+    reverseArray();
+</script>
+</body>
+</html>

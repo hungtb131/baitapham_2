@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt9</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let N = +prompt("Nhap do dai cua mang: ");
+    for (let i = 0; i < N; i++) {
+        array[i] = prompt("Nhap va phan tu thu " + i);
+    }
+
+    function checkElement(ele) {
+        for (let i = 0; i < N; i++) {
+            if (ele == array[i]) {
+                alert("Phan tu " + ele + " co trong mang");
+                break;
+            }
+            if (i == N - 1) {
+                alert("Phan tu " + ele + " khong co trong mang");
+            }
+        }
+    }
+
+    function countEle(element) {
+        let count = 0;
+        for (let i = 0; i < N; i++) {
+            if (element == array[i]) {
+                count++;
+            }
+        }
+        alert("phan tu " + element + " xuat hien " + count + " lan");
+    }
+
+    let char = prompt("nhap ky tu can kiem tra");
+    checkElement(char);
+    countEle(char);
+</script>
+</body>
+</html>

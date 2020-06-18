@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt6</title>
+</head>
+<body>
+<script>
+    function isInteger(N) {
+        if(N < 0 || N == 0){
+            return false;
+        }
+        return true;
+    }
+    let num = +prompt("nhap so can kiem tra: ");
+    if(isInteger(num)){
+        alert(num + " la so nguyen duong");
+    }else {
+        alert(num + " khong la so nguyen duong");
+    }
+</script>
+</body>
+</html>

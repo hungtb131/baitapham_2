@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt3</title>
+</head>
+<body>
+<script>
+    let N = +prompt("Nhap so: ");
+
+    function factorial(N) {
+        if (N == 0 || N == 1) {
+            alert("Luu y: Giai thua của 0 và 1 luon luon bang 1!");
+        } else {
+            let count = 1;
+            let multi = 1;
+            while (count < N) {
+                count++
+                multi *= count;
+            }
+            document.write("Giai thua cua " + count + " la: " + multi);
+        }
+    }
+
+    factorial(N);
+</script>
+</body>
+</html>

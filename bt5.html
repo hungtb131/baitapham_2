@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt5</title>
+</head>
+<body>
+<script>
+    let x = +prompt("Nhap so nguyen thu nhat: ");
+    let y = +prompt("Nhap so nguyen thu hai: ");
+    let z = +prompt("Nhap so nguyen thu ba: ");
+
+    function minNumber() {
+        let min = x;
+        if (y > min && z > min){
+            alert ('So nho nhat la:' +min);
+        } else
+        if (y>min && z<min){
+            alert('So nho nhat la:' +z);
+        } else if (y<min && z > y ){
+            alert('So nho nhat la:' +y);
+        }else if (y<minh && z < y){
+            alert ('So nho nhat la:' +min);
+        }
+    }
+    minNumber();
+</script>
+</body>
+</html>

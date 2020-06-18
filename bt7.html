@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt7</title>
+</head>
+<body>
+<script>
+    let num1 = +prompt("Nhap so thu nhat: ");
+    let num2 = +prompt("Nhap so thu hai: ");
+
+    function changeNum(N1,N2) {
+        let temp;
+        temp = N1;
+        N1 = N2;
+        N2 = temp;
+        document.write("2 so sau khi doi cho: "+N1 +" - "+N2);
+    }
+    changeNum(num1,num2);
+</script>
+</body>
+</html>
